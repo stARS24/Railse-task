@@ -57,9 +57,18 @@ flutter pub get
 ```
 
 3. Run the application:
+
+**Option 1: Run on Chrome (Recommended for this project):**
+```bash
+flutter run -d chrome
+```
+
+**Option 2: Run on any available device:**
 ```bash
 flutter run
 ```
+
+**Note:** This project is configured to run on web browsers. If you encounter platform issues, use the Chrome option above.
 
 ## Usage
 
@@ -138,6 +147,40 @@ The application implements the exact UI design from the assignment with:
 ✅ **Edit icon for start date on Not Started tasks**  
 ✅ **Tap date text to edit deadline for active tasks**  
 ✅ **Dart and Flutter implementation**
+
+## Troubleshooting
+
+### Platform Issues
+If you encounter "No supported devices connected" error, this project is designed to run on web browsers. Use:
+```bash
+flutter run -d chrome
+```
+
+### First Time Setup
+If this is your first time running the project, you may need to:
+1. Install Flutter dependencies: `flutter pub get`
+2. Enable web support: `flutter config --enable-web`
+3. Run on Chrome: `flutter run -d chrome`
+
+### Common Commands
+```bash
+# Install dependencies
+flutter pub get
+
+# Run on Chrome (recommended)
+flutter run -d chrome
+
+# Run on any available device
+flutter run
+
+# Build for web
+flutter build web
+
+# Clean and rebuild
+flutter clean
+flutter pub get
+flutter run -d chrome
+```
 
 ## License
 
